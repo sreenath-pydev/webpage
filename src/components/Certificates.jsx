@@ -45,7 +45,7 @@ const Certificates = () => {
               <img
                 src={certificate.image}
                 alt={certificate.title}
-                className="absolute duration-700 shadow-md group-hover:-translate-y-4 group-hover:-translate-x-4 -bottom-10 -right-10 w-1/2 h-1/2 rounded-lg"
+                className="absolute duration-700 shadow-md group-hover:-translate-y-4 group-hover:-translate-x-4 -bottom-10 -right-10 w-1/2 h-1/2 rounded-lg cursor-pointer"
               />
 
               <div>
