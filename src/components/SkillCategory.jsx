@@ -7,7 +7,7 @@ const SkillCategory = ({ title, skills }) => {
       <ul className="space-y-3">
         {skills.map(skill => (
           <li key={skill.id} className="pl-5 relative">
-            <span className="absolute left-0 text-blue-600">•</span>
+            <span className="absolute  left-0 text-blue-600">•</span>
             <strong>{skill.title}</strong> - {skill.description}
           </li>
         ))}

@@ -1,14 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * The root component of the application, which renders a centered, full-height
- * page with a blue title.
- *
- * @returns {JSX.Element} The rendered component.
- */
-/******  89530aa1-1676-407a-a47c-37a93f5a09a4  *******/import Experience from './components/Experience';
+
+import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificates from './components/Certificates';
 import Skills from './components/Skills';
