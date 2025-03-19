@@ -8,8 +8,10 @@ import Certificates from './components/Certificates';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
+import SpecializedIn from './components/SpecializedIn';
 
 function App() {
+  
   return (
     <div className="font-sans text-gray-800 bg-blue-50">
       <Navbar />
@@ -17,6 +19,7 @@ function App() {
       <Experience />
       <Education />
       <Certificates />
+      <SpecializedIn/>
       <Skills />
       <Footer />
       <BackToTop />

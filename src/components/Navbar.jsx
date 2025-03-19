@@ -17,16 +17,19 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white bg-opacity-95'}`}>
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-blue-600">SU</div>
-        <div className="hidden md:flex space-x-8">
-          <a href="#about" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">About</a>
-          <a href="#experience" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Experience</a>
-          <a href="#education" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Education</a>
-          <a href="#certificates" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Certificates</a>
-          <a href="#skills" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Skills</a>
-          <a href="#contact" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Contact</a>
+    <header className={`fixed w-full overflow-hidden z-50 transition-all duration-300 ${isScrolled ? 'bg-customBeige shadow-md' : 'bg-customBeige'}`}>
+
+
+<nav className="max-w-5xl container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+
+
+        <div className="hidden md:flex space-x-8 ml-auto">
+          <a href="#about" className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">Home</a>
+          <a href="#experience" className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">Experience</a>
+          <a href="#education" className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">Education</a>
+          <a href="#certificates" className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">Certificates</a>
+          <a href="#skills" className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">Skills</a>
+          <a href="#contact" className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">Contact</a>
         </div>
         <div className="md:hidden">
           <button className="text-gray-800">

@@ -3,7 +3,7 @@ import SocialIcon from './SocialIcon';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-blue-800 text-white py-12">
+    <footer id="contact" className="bg-rgbGreen text-white py-12">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl font-bold mb-2">Contact Me</h2>
         <p className="mb-6">Feel free to reach out for opportunities or collaborations</p>
