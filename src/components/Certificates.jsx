@@ -37,7 +37,7 @@ const Certificates = () => {
         <div className="grid md:grid-cols-2 gap-8 place-items-center ">
           {certificates.map((certificate) => (
             
-            <div
+            <div key={certificate.id} 
   className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 shadow-2xl bg-rgbHex text-gray-50 p-5"
 >
   <div className="">

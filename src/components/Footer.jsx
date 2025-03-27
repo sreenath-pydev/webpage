@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIcon from './SocialIcon';
+// import SocialIcon from './SocialIcon';
 
 const Footer = () => {
   return (
@@ -8,12 +8,12 @@ const Footer = () => {
         <h2 className="text-2xl font-bold mb-2">Contact Me</h2>
         <p className="mb-6">Feel free to reach out for opportunities or collaborations</p>
         
-        <div className="flex justify-center space-x-4 mb-6">
+        {/* <div className="flex justify-center space-x-4 mb-6">
           <SocialIcon href="mailto:SreeraguACCA@gmail.com" icon="✉️" label="Email" />
           <SocialIcon href="https://linkedin.com/in/SreeragUnniACCA/" icon="in" label="LinkedIn" />
           <SocialIcon href="#" icon="📷" label="Instagram" />
           <SocialIcon href="tel:+917356977963" icon="📞" label="Phone" />
-        </div>
+        </div> */}
         
         <div className="flex flex-col md:flex-row justify-center items-center mb-8 space-y-2 md:space-y-0 md:space-x-6">
           <div className="flex items-center">

@@ -9,11 +9,15 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import SpecializedIn from './components/SpecializedIn';
+import Carousel  from './components/Carousel';
+
+
+
 
 function App() {
   
   return (
-    <div className="font-sans text-gray-800 bg-blue-50">
+    <div className="font-sans overflow-hidden text-gray-800 bg-blue-50">
       <Navbar />
       <Hero />
       <Experience />
@@ -21,6 +25,7 @@ function App() {
       <Certificates />
       <SpecializedIn/>
       <Skills />
+      <Carousel/>
       <Footer />
       <BackToTop />
     </div>

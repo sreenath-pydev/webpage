@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { motion } from "framer-motion"
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,10 +17,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed w-full overflow-hidden z-50 transition-all duration-300 ${isScrolled ? 'bg-customBeige shadow-md' : 'bg-customBeige'}`}>
+    <header className={`fixed w-full overflow-hidden z-50 transition-all duration-300 ${isScrolled ? 'bg-customBeige shadow-xl' : 'bg-customBeige'}`} >
 
 
-<nav className="max-w-5xl container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+<motion.nav className="max-w-5xl container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center" initial={{ y: -100, opacity: 0 }}
+         animate={{ y: 0, opacity: 1 }}
+         transition={{ duration: 0.6 }}>
 
 
         <div className="hidden md:flex space-x-8 ml-auto">
@@ -38,7 +40,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 };
