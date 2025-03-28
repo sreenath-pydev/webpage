@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-
+import { motion } from "framer-motion";
 const Experience = () => {
   return (
     <section id="experience" className="py-16 bg-[#FFF6E9]">
@@ -9,12 +9,20 @@ const Experience = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Left Column - Heading */}
-          <div className="md:col-span-1 flex items-center">
+          <motion.div className="md:col-span-1 flex items-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <SectionTitle>Professional Experience</SectionTitle>
-          </div>
+          </motion.div>
 
           {/* Right Column - Experience Details */}
-          <div className="md:col-span-2">
+          <motion.div className="md:col-span-2"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            >
             <div className="group flex flex-col gap-2 w-full h-72 relative rounded-lg p-4 bg-rgbHex duration-700 hover:-translate-y-2 hover:shadow-xl cursor-pointer">
               {/* Experience Image */}
               <img
@@ -33,7 +41,7 @@ const Experience = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

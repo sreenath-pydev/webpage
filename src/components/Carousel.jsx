@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import SectionTitle from './SectionTitle';
 import { FaLinkedin } from "react-icons/fa";
 import photo1 from "../images/photo1.png"
@@ -74,11 +75,20 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="bg-custom-grid bg-grid-size bg-[#FFF6E9]"><SectionTitle>Photo Gallery</SectionTitle>
+    <motion.div className="bg-custom-grid bg-grid-size bg-[#FFF6E9]"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}   
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
+            <SectionTitle>Photo Gallery</SectionTitle>
     <Slider {...settings}>
               
       {carouselData.map((item) => (
-        <div key={item.id} className="flex-col  items-center  relative">
+        <motion.div key={item.id} className="flex-col  items-center  relative"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}   
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
             <div className="absolute inset-0 bg-gradient-to-t from-teal-500/30 to-transparent"></div>
           <img src={item.src} alt={item.alt} className="w-4/5 h-[400px] object-cover mx-auto rounded-2xl" />
           
@@ -89,10 +99,10 @@ export default function SimpleSlider() {
              <FaLinkedin size={30} className='text-blue-600 hover:text-blue-900 text-center items-center cursor-pointer'/></a>
           </div>
           
-        </div>
+        </motion.div>
     
       ))}
     </Slider>
-    </div>
+    </motion.div>
   );
 }

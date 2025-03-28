@@ -1,6 +1,6 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import SectionTitle from './SectionTitle';
-import CertificateCard from './CertificateCard';
 import CertificateACCA from '../images/CertificateACCA.png';
 import DegreeCertificate from '../images/CertificateACCA.png';
 
@@ -31,15 +31,23 @@ const Certificates = () => {
 
   return (
     <section id="certificates" className="py-2 bg-custom-grid bg-grid-size bg-[#FFF6E9] ">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <motion.div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}   
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        >
         <SectionTitle>Certificates</SectionTitle>
         
         <div className="grid md:grid-cols-2 gap-8 place-items-center ">
           {certificates.map((certificate) => (
             
-            <div key={certificate.id} 
-  className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 shadow-2xl bg-rgbHex text-gray-50 p-5"
->
+  <motion.div key={certificate.id} 
+      className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 shadow-2xl bg-rgbHex text-gray-50 p-5"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}   
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      
+      >
   <div className="">
     <img
       src={certificate.image}
@@ -58,11 +66,11 @@ const Certificates = () => {
       </p>
     </div>
   </div>
-</div>
+</motion.div>
 
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
