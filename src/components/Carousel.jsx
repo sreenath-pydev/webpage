@@ -2,49 +2,61 @@ import React from "react";
 import Slider from "react-slick";
 import SectionTitle from './SectionTitle';
 import { FaLinkedin } from "react-icons/fa";
-import Eyphoto from "../images/Eyphotos3.jpg"
+import photo1 from "../images/photo1.png"
+import photo2 from "../images/photo2.png"
+import photo3 from "../images/photo3.png"
+import photo4 from "../images/photo4.png"
+import photo5 from "../images/photo5.png"
+import photo6 from "../images/photo6.png"
+
 const carouselData = [
   {
     id: 1,
-    src: "https://media.licdn.com/dms/image/v2/D5622AQGUCMMTWZ6zgA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1728359599015?e=1746057600&v=beta&t=Hbj0KTA5eq__eY3VyfBiRPi7DRvUVN6qbX1NJY3lx80",
+    src: photo1,
     alt: "First slide",
     title: "ACCA Skills Fiesta 2024",
-    description: "Grateful for the ACCA Skills Fiesta 2024 experience in Bangalore! Special thanks to Kesav Muralidharan, Sai Priya Amar, Asha M,Vasundhara Chakravarthy, Barsha Sharma, Naina V G, Ashish Shetty, Nikhil Patodi for sharing expert advice. This event not only enhanced my skills but also provided a fantastic platform to network and build valuable connections. ",
+    description: "Thankful for the ACCA Skills Fiesta 2024 in Bangalore, which enhanced my skills and networking. Special thanks to Kesav Muralidharan and the team for their expert advice ",
+    link:"https://www.linkedin.com/posts/sreeragunniacca_grateful-for-the-acca-skills-fiesta-2024-activity-7249265593797730304-PIK7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
   {
     id: 2,
-    src: "https://media.licdn.com/dms/image/v2/D5622AQF46aVlPWHkZw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1728359599478?e=1746057600&v=beta&t=64rg4rRF7itLouoH-Q4vNNdHoruYQS9-0Kw41bisUIA",
+    src: photo2,
     alt: "Second slide",
     title: "ACCA Skills Fiesta 2024",
-    description: "Grateful for the ACCA Skills Fiesta 2024 experience in Bangalore! Special thanks to Kesav Muralidharan, Sai Priya Amar, Asha M,Vasundhara Chakravarthy, Barsha Sharma, Naina V G, Ashish Shetty, Nikhil Patodi for sharing expert advice. This event not only enhanced my skills but also provided a fantastic platform to network and build valuable connections. ",
+    description: "Thankful for the ACCA Skills Fiesta 2024 in Bangalore, which enhanced my skills and networking. Special thanks to Kesav Muralidharan and the team for their expert advice ",
+    link:"https://www.linkedin.com/posts/sreeragunniacca_grateful-for-the-acca-skills-fiesta-2024-activity-7249265593797730304-PIK7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
   {
     id: 3,
-    src: Eyphoto,
+    src: photo3,
     alt: "Third slide",
     title: "EY Experieces",
     description: "P.S. A nostalgic glance at my EY GDS Kochi office days. Grateful for the experience and connections made.",
+    link:"https://www.linkedin.com/posts/sreeragunniacca_im-sure-many-of-you-can-relate-to-saying-activity-7252227003179794432-Ckrw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
   {
     id: 4,
-    src: "https://media.licdn.com/dms/image/v2/D5622AQFMx28dj5Vpvw/feedshare-shrink_1280/feedshare-shrink_1280/0/1703150897957?e=1746057600&v=beta&t=r77DG-8hI0l5ZyVhGvxpXiaSABq3ezZ7BJJYkeD-wEA",
+    src: photo4,
     alt: "Fourth slide",
     title: "EY",
     description: "I'm incredibly excited about the exceptional EY experience that lies ahead.",
+    link:"https://www.linkedin.com/posts/sreeragunniacca_ey-gds-eygds-activity-7143532629609308161-l1pi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
   {
     id: 5,
-    src: "https://media.licdn.com/dms/image/v2/D4E22AQEpEVlYQX7JUQ/feedshare-shrink_2048_1536/B4EZPV3eXVHsAs-/0/1734459937268?e=1746057600&v=beta&t=eS-aVA6_FflJzG48F_r-c8FSHL3r2CwH8zFcumtkXB0",
+    src: photo5,
     alt: "Fifith slide",
     title: "𝐀𝐂𝐂𝐀 𝐈𝐧𝐝𝐢𝐚 𝐄𝐦𝐩𝐥𝐨𝐲𝐞𝐫 𝐂𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞",
-    description: "The most rewarding part of this experience was the opportunity to meet so many talented professionals. It was inspiring—the energy in the room, the knowledge shared, and the collaborative spirit really highlighted the strength of the ACCA community.",
+    description: "Meeting talented professionals and experiencing the ACCA community's energy and collaboration was truly inspiring.",
+    link:"https://www.linkedin.com/posts/sreeragunniacca_%F0%9D%90%96%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A7-%F0%9D%90%88-%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A0%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9D-%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AB-%F0%9D%90%AD%F0%9D%90%A1%F0%9D%90%9E-activity-7274852260688326657-07Ww?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
   {
     id: 6,
-    src: "https://media.licdn.com/dms/image/v2/D4E22AQEzojM-WZ_HMw/feedshare-shrink_2048_1536/B4EZPV3eUtHkAs-/0/1734459923106?e=1746057600&v=beta&t=IsXYzozkNTq59mlmZ81bQb76ecxmrIG5Z892v1eT8To",
+    src: photo6,
     alt: "Sixth slide",
     title: "𝐀𝐂𝐂𝐀 𝐈𝐧𝐝𝐢𝐚 𝐄𝐦𝐩𝐥𝐨𝐲𝐞𝐫 𝐂𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞",
-    description: "The most rewarding part of this experience was the opportunity to meet so many talented professionals. It was inspiring—the energy in the room, the knowledge shared, and the collaborative spirit really highlighted the strength of the ACCA community.",
+    description: "Meeting talented professionals and experiencing the ACCA community's energy and collaboration was truly inspiring.",
+    link:"https://www.linkedin.com/posts/sreeragunniacca_%F0%9D%90%96%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A7-%F0%9D%90%88-%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A0%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9D-%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AB-%F0%9D%90%AD%F0%9D%90%A1%F0%9D%90%9E-activity-7274852260688326657-07Ww?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
 ];
 
@@ -70,10 +82,11 @@ export default function SimpleSlider() {
             <div className="absolute inset-0 bg-gradient-to-t from-teal-500/30 to-transparent"></div>
           <img src={item.src} alt={item.alt} className="w-4/5 h-[400px] object-cover mx-auto rounded-2xl" />
           
-          <div className="absolute bg-black/30 backdrop-blur-sm p-4  rounded-lg bottom-0 left-1/2 transform -translate-x-1/2  text-center items-centerw-full px-4 cursor-pointer  grid place-items-center">
+          <div className="absolute  bg-black/30 backdrop-blur-sm p-4  rounded-lg bottom-5 left-1/2 transform -translate-x-1/2  text-center items-center w-[90%] sm:w-[70%] px-4 cursor-pointer  grid place-items-center">
             <h3 className="text-white text-3xl font-bold mb-2">{item.title}</h3>
             <p className="text-white text-sm">{item.description}</p>
-             <FaLinkedin size={30} className='text-blue-600 hover:text-blue-900 text-center items-center cursor-pointer'/>
+            <a href={item.link} target="_blank">
+             <FaLinkedin size={30} className='text-blue-600 hover:text-blue-900 text-center items-center cursor-pointer'/></a>
           </div>
           
         </div>
