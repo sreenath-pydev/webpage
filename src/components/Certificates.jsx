@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import SectionTitle from './SectionTitle';
 import CertificateACCA from '../images/CertificateACCA.png';
-import DegreeCertificate from '../images/CertificateACCA.png';
+import Bcom from '../images/bcomCertificate.png';
 
 const Certificates = () => {
   const certificates = [
@@ -19,12 +19,12 @@ const Certificates = () => {
     },
     {
       id: 2,
-      title: "Degree Certificate",
+      title: "Bcom in Accounting & Finance",
       description: (
         <>
         Earned a <b>BCom in Accounting & Finance</b> from <b>University of Madras (2019-2022)</b> with <b>7.6 GPA</b>, First Class with Distinction. </>
       ),
-      image: 'https://d1aeya7jd2fyco.cloudfront.net/upload_file/madras-university-online.webp',
+      image: Bcom,
       link: "#"
     }
   ];

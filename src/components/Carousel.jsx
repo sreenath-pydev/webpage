@@ -89,12 +89,12 @@ export default function SimpleSlider() {
           whileInView={{ opacity: 1, y: 0 }}   
           transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-teal-500/30 to-transparent"></div>
-          <img src={item.src} alt={item.alt} className="w-4/5 h-[400px] object-cover mx-auto rounded-2xl" />
+            <div className="absolute  inset-0 bg-gradient-to-t from-teal-500/30 to-transparent"></div>
+          <img src={item.src} alt={item.alt} className="w-full sm:w-4/5 sm:h-[400px] h-[250px] object-cover mx-auto rounded-2xl" />
           
-          <div className="absolute  bg-black/30 backdrop-blur-sm p-4  rounded-lg bottom-5 left-1/2 transform -translate-x-1/2  text-center items-center w-[90%] sm:w-[70%] px-4 cursor-pointer  grid place-items-center">
-            <h3 className="text-white text-3xl font-bold mb-2">{item.title}</h3>
-            <p className="text-white text-sm">{item.description}</p>
+          <div className="absolute  bg-black/30 backdrop-blur-sm p-4  rounded-lg sm:bottom-5 bottom-1 left-1/2 transform -translate-x-1/2  text-center items-center w-[90%] sm:w-[70%] px-4 cursor-pointer  grid place-items-center">
+            <h3 className="text-white sm:text-3xl sm:font-bold font-medium mb-2">{item.title}</h3>
+            <p className="text-white text-sm hidden sm:block">{item.description}</p>
             <a href={item.link} target="_blank">
              <FaLinkedin size={30} className='text-blue-600 hover:text-blue-900 text-center items-center cursor-pointer'/></a>
           </div>
