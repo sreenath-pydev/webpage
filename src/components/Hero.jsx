@@ -10,7 +10,7 @@ import suProfile from '../images/su-profile.png';
 import greenRound from '../images/greenround.png';
 import blackLine from '../images/blackline.png';
 import yellowDesign from '../images/yellowdesign.png'
-import Cv from "../files/Sreerag_Resume.pdf"
+import Cv from "../files/Sreerag_ACCA_Audit.pdf"
 
 const Hero = () => {
 
