@@ -21,7 +21,7 @@ const carouselData = [
   },
   {
     id: 2,
-    src: photo2,
+    src: photo3,
     alt: "Second slide",
     title: "ACCA Skills Fiesta 2024",
     description: "Thankful for the ACCA Skills Fiesta 2024 in Bangalore, which enhanced my skills and networking. Special thanks to Kesav Muralidharan and the team for their expert advice ",
@@ -29,7 +29,7 @@ const carouselData = [
   },
   {
     id: 3,
-    src: photo3,
+    src: photo4,
     alt: "Third slide",
     title: "EY Experieces",
     description: "P.S. A nostalgic glance at my EY GDS Kochi office days. Grateful for the experience and connections made.",
@@ -37,7 +37,7 @@ const carouselData = [
   },
   {
     id: 4,
-    src: photo4,
+    src: photo2 ,
     alt: "Fourth slide",
     title: "EY",
     description: "I'm incredibly excited about the exceptional EY experience that lies ahead.",
