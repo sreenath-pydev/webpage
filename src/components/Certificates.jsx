@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import SectionTitle from './SectionTitle';
 import CertificateACCA from '../images/CertificateACCA.png';
-import Bcom from '../images/bcomCertificate.png';
+import Bcom from '../images/bcomCertificate.jpg';
 
 const Certificates = () => {
   const certificates = [
