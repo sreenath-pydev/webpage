@@ -35,7 +35,7 @@ const Experience = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-2 text-gray-800">Assurance Consultant</h2>
                 <p className="text-gray-600 line-clamp-3 h-32">
-                  From December 2023 to February 2024, I led audits for listed US entities, ensuring strict regulatory compliance.
+                  From December 2023 to February 2024, I Contributed audits for listed US entities, ensuring strict regulatory compliance.
                   My responsibilities included conducting thorough financial data validation and reviewing cut-off procedures 
                   to guarantee accurate period-end reporting.
                 </p>
