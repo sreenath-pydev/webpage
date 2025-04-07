@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificates from './components/Certificates';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import SpecializedIn from './components/SpecializedIn';
@@ -24,7 +24,7 @@ function App() {
       <Education />
       <Certificates />
       <SpecializedIn/>
-      <Skills />
+{/*       <Skills /> */}
       <Carousel/>
       <Footer />
       <BackToTop />
