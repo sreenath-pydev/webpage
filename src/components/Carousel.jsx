@@ -36,14 +36,6 @@ const carouselData = [
     link:"https://www.linkedin.com/posts/sreeragunniacca_im-sure-many-of-you-can-relate-to-saying-activity-7252227003179794432-Ckrw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
   },
   {
-    id: 4,
-    src: photo2 ,
-    alt: "Fourth slide",
-    title: "EY",
-    description: "I'm incredibly excited about the exceptional EY experience that lies ahead.",
-    link:"https://www.linkedin.com/posts/sreeragunniacca_ey-gds-eygds-activity-7143532629609308161-l1pi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD0rl6kBpeRZSToz7pAL1wRoMMvFKHLNPt0"
-  },
-  {
     id: 5,
     src: photo5,
     alt: "Fifith slide",
