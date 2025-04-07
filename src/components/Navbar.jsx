@@ -28,7 +28,7 @@ const Navbar = () => {
       >
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8 ml-auto">
-          {["Home", "Experience", "Education", "Certificates", "Skills", "Contact"].map((item) => (
+          {["Experience", "Education", "Certificates", "Contact"].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-800 hover:text-rgbGreen font-medium transition-colors">
               {item}
             </a>
@@ -62,7 +62,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="flex flex-col space-y-4 text-center">
-              {["Home", "Experience", "Education", "Certificates", "Skills", "Contact"].map((item) => (
+              {["Home", "Experience", "Education", "Certificates","Contact"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
