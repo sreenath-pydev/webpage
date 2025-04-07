@@ -54,7 +54,7 @@ const Hero = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}>
-        Hello, I’am<br></br>Sreerag Unni <br></br>a ACCA Affiliate
+        Hello, I’am<br></br>Sreerag Unni <br></br>an ACCA Affiliate
       </motion.h1>
 
       {/* Right Side - CV Download button */}
